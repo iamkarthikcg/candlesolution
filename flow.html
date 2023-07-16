@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="flow.css">
+
+    <style>
+        /* Add CSS styles for the showcase section here */
+        .showcase {
+          /* Add your existing showcase styles here */
+          /* Make sure the showcase section is positioned relative for absolute positioning of .menu */
+          position: relative;
+        }
+    
+        /* Add CSS styles for the category section here */
+        
+        .category {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(16rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1.5rem;
+  padding-bottom: 5rem;
+  
+}
+
+.category .box {
+  padding: 2rem;
+  text-align: center;
+  border-radius: .5rem;
+  background: #f7f7f7;
+}
+
+.category .box:hover {
+  background: #27ae60;
+}
+
+.category .box:hover h3 {
+  color: #fff;
+}
+
+.category .box img {
+  height: 7rem;
+}
+
+.category .box h3 {
+  font-size: 1.8rem;
+  color: #130f40;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+
+        /* Add media query for responsiveness */
+        @media screen and (max-width: 768px) {
+          .box {
+            flex: 0 0 calc(50% - 20px); /* On smaller screens, make the boxes take up 1/2 of the width */
+          }
+        }
+      </style>
+
+
+</head>
+<body>
+    <section class="showcase">
+        <header>
+          <a href="#" class="logo"><img src="Asset 1.png" width="8%" alt="Logo"></a>
+          <div class="toggle"></div>
+        </header>
+      
+        <video src="green3.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+          <h2>we can do  </h2> 
+          <h3>literally <span style="color:rgb(237, 237, 44);">everything</span></h3>
+          <p>Empowered by our limitless capabilities and relentless drive, there is no task too grand,
+            no obstacle too formidable—we possess the ability to accomplish absolutely everything that lies before us..</p>
+          <a href="#">call us now</a>
+        </div>
+        <ul class="social">
+          <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+          <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+          <li><a href="https://www.instagram.com/candle_engineering/"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+        </ul>
+      </section>
+      <div class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+
+    
+<br><section class="category">
+
+    <a href="#" class="box">
+        <img src="electrician.png"  alt="">
+        <h3>Electrical & plumbing work</h3>
+    </a>
+
+    <a href="#" class="box">
+        <img src="architect.png"  alt="">
+        <h3>Construction work</h3>
+    </a>
+
+    <a href="#" class="box">
+        <img src="solar-cell.png" alt="">
+        <h3>Solar panel installation</h3>
+    </a>
+
+    <a href="#" class="box">
+        <img src="home-automation.png"   alt="">
+        <h3>Home automation</h3>
+    </a>
+
+    <a href="#" class="box">
+        <img src="gate.png" alt="">
+        <h3>Gate automation</h3>
+    </a>
+
+    <a href="#" class="box">
+        <img src="camera.png" alt="" >
+        <h3>CCTV surveillance</h3>
+    </a>
+
+</section>
+
+
+      <script src="flow.js"></script>
+</body>
+</html>
